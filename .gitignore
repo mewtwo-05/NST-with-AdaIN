@@ -1,0 +1,41 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Large training checkpoints and optimizer states (saves ~1.2 GB)
+experiment/trial*/
+experiment/big_dataset/
+experiment/experiment1/
+experiment/experiment2/
+experiment/experiment_full/checkpoint_*.pth
+experiment/experiment_full/optimizer_*.pth
+experiment/experiment_full/decoder_[1-9].pth
+
+# VGG weight file (Tracked in repo)
+# vgg_normalized.pth
+# vgg19*.pth
+
+# Datasets
+test2017/
+train_3/
+content_data/
+style_data/
+
+# Web app temporary uploads
+static/uploads/*
+!static/uploads/.gitkeep
+
+# Scratch files
+cmd.txt
